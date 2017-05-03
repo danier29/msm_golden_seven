@@ -1,0 +1,10 @@
+<h1><%= @photo.caption %></h1>
+
+<p><img src="<%= @photo.source %>" width="300">
+</p>
+<p> Created
+<%= time_ago_in_words(@photo.created_at)%> ago
+</p>
+
+<p> <a href="/<%= photo.id %>/edit_photo" > Edit Photo <i class= fa fa-trash-o> </i>
+</p>
